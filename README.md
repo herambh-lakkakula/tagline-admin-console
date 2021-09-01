@@ -1,0 +1,4 @@
+
+###.env properties :
+###=================
+### mongodb+srv://<React.Fragment>:<React.Fragment>@cluster0.sm0nw.mongodb.net/tagline_dev_db?authSource=admin&replicaSet=atlas-a6y812-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true

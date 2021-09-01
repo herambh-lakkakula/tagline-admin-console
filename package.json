@@ -1,0 +1,49 @@
+{
+  "name": "tagline-admin-console",
+  "version": "1.0.0",
+  "description": "Tagline Traders Admin Console",
+  "author": "Sunil Lakkakula",
+  "email": "sunil.lakkakula@gmail.com",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "lint": "^0.7.0",
+    "mongoose": "^5.12.5",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.0",
+    "path": "^0.12.7",
+    "pdfkit": "^0.12.1",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.13.7",
+    "react-bootstrap": "^1.6.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:delete": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunillakkakula/tagline.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunillakkakula/tagline/issues"
+  },
+  "homepage": "https://github.com/sunillakkakula/tagline#readme"
+}
